@@ -1,0 +1,236 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: normal;
+  src: url(https://fonts.gstatic.com/s/opensans/v34/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4gaVc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  src: url(https://fonts.gstatic.com/s/opensans/v34/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4gaVc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+  src: url(https://fonts.gstatic.com/s/opensans/v34/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4gaVc.ttf) format('truetype');
+}
+/*VARIABLES*/
+/*BODY STYLING*/
+body {
+  font-family: 'Open Sans';
+  font-weight: 300;
+  font-size: 1em;
+  color: #444;
+}
+a {
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+}
+a:hover {
+  cursor: pointer;
+}
+a.more:after {
+  content: '\00A0 \00BB';
+}
+/*HEADER & NAVIGATION*/
+#logo {
+  display: inline-block;
+  position: absolute;
+  width: 15em;
+  height: 4em;
+  margin: 0.9em 1em;
+  background: url('') no-repeat;
+  background-size: 100%;
+  color: transparent;
+}
+header {
+  background: #333333;
+  font-size: 0.85em;
+  color: #fff;
+}
+header a {
+  color: #fff;
+}
+a.menu-link {
+  float: right;
+  display: block;
+  padding: 1.5em;
+  text-decoration: none;
+  background: #222;
+}
+nav[role=navigation] {
+  clear: both;
+  transition: all 0.3s ease-out;
+  background: #333333;
+  border-bottom: 4px solid #8dc63f;
+}
+.js nav[role=navigation] {
+  overflow: hidden;
+  max-height: 0;
+}
+nav[role=navigation].active {
+  max-height: 25em;
+}
+nav[role=navigation] ul {
+  margin: 0;
+  padding: 0;
+  border-top: 4px solid #8dc63f;
+}
+nav[role=navigation] li a {
+  display: block;
+  padding: 1.5em;
+  border-bottom: 1px dotted #666;
+  text-decoration: none;
+  transition: background-color 0.15s ease-in;
+}
+nav[role=navigation] li a:hover {
+  background: #8dc63f;
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+}
+/*FOOTER*/
+footer {
+  clear: both;
+  background: #333;
+  font-size: 0.85em;
+  color: #fff;
+}
+footer p {
+  padding: 2em;
+  margin: 0;
+}
+/*HERO*/
+section.hero {
+  position: relative;
+  background: #999 url('k.jpg') center no-repeat;
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+  color: #222;
+}
+section.hero .welcome {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background: rgba(141, 198, 63, 0.75);
+}
+section.hero .welcome h1 {
+  font-size: 1em;
+  font-weight: 300;
+  margin: 2em;
+}
+section.hero .welcome h1 a {
+  color: #fff;
+}
+section.hero .welcome h1 a:hover {
+  border-bottom: 1px dotted #fff;
+}
+/*ASIDES*/
+aside {
+  width: 100%;
+  border-bottom: 1px solid #eee;
+}
+aside.events {
+  background: #e5e5e5;
+}
+aside article {
+  padding: 2em;
+}
+aside article h2 {
+  font-weight: 400;
+  padding-bottom: 1em;
+  marging-bottom: 1em;
+  border-bottom: 1px dotted #8dc63f;
+}
+aside article .post {
+  background: ;
+}
+aside article .post h3 {
+  margin: 0;
+}
+aside article .post p {
+  margin-top: 0.25em;
+}
+aside article a.more {
+  color: #8dc63f;
+  font-weight: 400;
+}
+aside article a.more:hover {
+  border-bottom: 1px dotted #8dc63f;
+  color: #7aab37;
+}
+aside a.btn {
+  display: block;
+  width: 15.5em;
+  background: #8dc63f;
+  text-align: center;
+  padding: 1em;
+  color: #fff;
+  font-weight: 400;
+  border-radius: 3px;
+}
+aside a.btn:hover {
+  background: #7aab37;
+}
+/*MEDIA QUERIES*/
+@media screen and (min-width: 48.25em) {
+  #logo {
+    width: 22em;
+    margin: 0.4em 1em;
+  }
+  a.menu-link {
+    display: none;
+  }
+  .js nav[role=navigation] {
+    max-height: none;
+  }
+  nav[role=navigation] ul {
+    text-align: center;
+    margin: 0 0 0 -0.25em;
+    border: 0;
+    float: right;
+  }
+  nav[role=navigation] li {
+    display: inline-block;
+    margin: 0 0.25em;
+  }
+  nav[role=navigation] li a {
+    border: 0;
+  }
+  section.hero {
+    height: 400px;
+  }
+  section.hero .welcome {
+    width: 50%;
+    max-width: 40em;
+    bottom: 3em;
+  }
+  section.hero h1 {
+    font-size: 1em;
+    margin: 1.5em;
+  }
+  aside {
+    float: left;
+    width: 32%;
+    border-bottom: 0;
+  }
+  aside.events {
+    background: #e5e5e5;
+  }
+  aside.happening {
+    border-right: 1px solid #eee;
+  }
+  aside article {
+    padding: 2em;
+  }
+  aside article h2 {
+    font-weight: 400;
+  }
+  aside a.btn {
+    width: 85%;
+  }
+}
