@@ -13,4 +13,4 @@ Rust and Cargo.
 
 
 
-Deployed link : https:bahariwaters.netlify.app
+Deployed link : https://bahariwaterssourcestartup.on.drv.tw/w/
